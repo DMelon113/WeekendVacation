@@ -1,21 +1,31 @@
 require 'sinatra'
 
 get '/'  do
-	"Weekend Vacation"
+	@title = "Weekend Vacation"
+	@story = "It’s Thursday evening and you are sitting on your couch. You’ve got Friday off from work because who needs a job? What do you want to do for your weekend off? "
+	@choice_1 = "Miami"
+	@choice_2 = "Wisconsin"
 	erb :index
 end
 
-post '/guess' do
-	if params[:trip] == "Miami"
-		erb :miami
-	elsif params[:trip] == "Wisconsin"
+get '/decision/:choice' do
+	case params[:choice]
+	when "Miami"
+	@title = "Weekend Vacation"
+	@choice_1 = "Scuba Dive"
+	@choice_2 = "Go on a Boat"
+	erb :index
 
+	when "Wisconsin"
+		@title = "Weekend Vacation"	
+		@choice_1 = "Go on a Jet Ski"
+		@choice_2 = "Go Fishing on a Boat"
+		erb :index
 		end
 	end
-post '/guess/miami' do
-			if params[:activity] == "Scuba"
-			erb :scuba
-		end
-	end
 
+get 'activity/decision/:choice' do
+	case params[:choice]
+	when "Miami/choice_1"
+	@title = "Weekend Vacation"
 

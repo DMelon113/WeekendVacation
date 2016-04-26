@@ -6,3 +6,26 @@
 
 	<input type= "submit">
 </form>
+
+
+
+
+post '/guess' do
+	if params[:trip] == "Miami"
+		erb :miami
+	elsif params[:trip] == "Wisconsin"
+#something
+		end
+	end
+post '/guess/miami' do
+			if params[:activity] == "Scuba"
+			erb :scuba
+		end
+	end
+post 'guess/miami/scuba' do
+	if params[:tank] == "Full"
+		erb :fulltank
+	end
+end
+
+
