@@ -18,7 +18,7 @@ get '/decision/:choice' do
 
 when "Go_on_a_Boat"
 	@title = "Weekend Vacation"
-	@story = "You make yourself a cocktail enjoy the scenery. You eventually get bored and start sailing back to shore. A police boat sees you and thinks you are weaving. He makes you take a breathalizer test and you spend the night in prison for a D.U.I "
+	@story = "You make yourself a cocktail and enjoy the scenery. You eventually get bored and start sailing back to shore. A police boat sees you and thinks you are weaving. He makes you take a breathalizer test and you spend the night in prison for a D.U.I "
 
 	when "Scuba_Dive"
 	@title = "Weekend Vacation"
