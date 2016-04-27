@@ -32,7 +32,7 @@ when "Partially_fill_up_tank"
 
 when "Fully_fill_up_tank"
 	@title = "Weekend Vacation"
-	@story = "Wow, you are underwater for a pretty long time. Suddenly, you see a black tip shark which turns and attacks you. R.I.P"
+	@story = "Wow, you are underwater for a pretty long time. You see a black tip shark who looks pretty chill. You take out the hot dog in your back pocket and attempt to feed him. The shark eats the hot dog and descides that it wants another nibble. R.I.P he bites you right in the face."
 
 
 	when "Wisconsin"
@@ -43,7 +43,7 @@ when "Fully_fill_up_tank"
 
 	when "Go_on_a_Jet_Ski"
 		@title = "Weekend Vacation"
-		@story = "You enjoy yourself, but run into a dock causing severe property damage."
+		@story = "You enjoy yourself, but run into a dock causing severe property damage. The owner of the dock isn't having it, and calls the lake police on you. You decide to make a run for it, but your boat is clow. You spend the night in jail"
 
 	when "Go_Fishing_on_a_Boat"
 		@title = "Weekend Vacation"
