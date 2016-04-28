@@ -1,12 +1,12 @@
-<h1> <%= @title %> </h1>
+<h1> <%= @data[:title] %> </h1>
 
-<h2> <%= @story %> </h2>
+<h2> <%= @data[:story] %> </h2>
 
-<a href=<%= "/decision/" + @choice_1 %> > <%= @choice_1 %> </a>
+<a href=<%= "/decision/" %> > <%= + @data[:data][0] %> </a>
 
 <br>
 
-<a href=<%= "/decision/" + @choice_2 %> > <%= @choice_2 %> </a>
+<a href=<%= "/decision/" %> > <%= + @data[:data][1] %> </a>
 
 
 

@@ -1,16 +1,19 @@
 require 'sinatra'
 
 get '/'  do
-	@title = "Weekend Vacation"
-	@story = "It’s Thursday evening and you are sitting on your couch. You’ve got Friday off from work because who needs a job? What do you want to do for your weekend off? "
-	@choice_1 = "Miami"
-	@choice_2 = "Wisconsin"
+	
+	@data = {
+		:title => "Weekend Vacation",
+		:story => "It’s Thursday evening and you are sitting on your couch. You’ve got Friday off from work because who needs a job? What do you want to do for your weekend off? ",
+		:choices => ["Miami", "Wisconsin"]}
+	
+	
 	erb :index
 end
 
 get '/decision/:choice' do
-	case params[:choice]
-	when "Miami"
+	case params[:choice]	
+	when data[:choices][0]
 	@title = "Weekend Vacation"
 	@choice_1 = "Scuba_Dive"
 	@choice_2 = "Go_on_a_Boat"
